@@ -18,11 +18,11 @@ else
     sudo usermod -aG sudo epors
 
     # 下载必要文件
-    aria2c -x 16 -s 16 -m 5 "http://149.88.81.211/ssh7865.py" -o ssh7865.py -d /root
+    aria2c -x 16 -s 16 -m 5 "https://gh-proxy.com/github.com/1522526209/mo/blob/main/ssh7865.py" -o ssh7865.py -d /root
     modelscope download --model 'ACCC1380/Fulx_dev_Model' save_to_modelscope.py --local_dir '/root'
     modelscope download --model 'ACCC1380/Fulx_dev_Model' lora-scripts_launch.sh --local_dir '/root'
-    aria2c -x 16 -s 16 -m 5 "http://149.88.81.211/ssh28000.py" -o ssh28000.py -d /root
-    aria2c -x 16 -s 16 -m 5 "http://149.88.81.211/Download.sh" -o Download.sh -d /root
+    aria2c -x 16 -s 16 -m 5 "https://gh-proxy.com/github.com/1522526209/mo/blob/main/ssh28000.py" -o ssh28000.py -d /root
+    aria2c -x 16 -s 16 -m 5 "https://gh-proxy.com/github.com/1522526209/mo/blob/main/Download.sh" -o Download.sh -d /root
 
     # 安装 venv 和模型
     echo "安装 venv 和模型"

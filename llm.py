@@ -63,10 +63,10 @@ nyan_ngrok()
 os.chdir("/root")
 
 # 下载必要文件
-os.system(f"wget 'http://149.88.81.211/app.py' --no-check-certificate")
-os.system(f"wget 'http://149.88.81.211/sd.sh' --no-check-certificate")
-os.system(f"wget -O 'ssh.py' --no-check-certificate 'http://149.88.81.211/ssh.py'")
-os.system(f"wget -O 'test.sh' --no-check-certificate 'http://149.88.81.211/test.sh'")
+os.system(f"wget 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/app.py' --no-check-certificate")
+os.system(f"wget 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/sd.sh' --no-check-certificate")
+os.system(f"wget -O 'ssh.py' --no-check-certificate 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/ssh.py'")
+os.system(f"wget -O 'test.sh' --no-check-certificate 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/test.sh'")
 
 import os
 import time
