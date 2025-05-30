@@ -1,0 +1,21 @@
+curl 'https://www.modelscope.cn/api/v1/studio/Akizuki/Large_Language_model/reset_restart' \
+  -X 'PUT' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Cookie: cna=lLuvH970/3ABASQJiVoJjoAN; _ga=GA1.1.2144303129.1730727320; _gcl_au=1.1.88747731.1730727320; t=7d9a55d751fb387a1db710aae3c32bb6; m_session_id=10cdd62e-c7ae-4686-891b-063654e18ce9; h_uid=2218303227545; _c_WBKFRo=6b18Pj0iA8c9g4emYCVqA84vYE709pmAUS92E83F; csrf_session=MTczMzMxOTMxOXxEWDhFQVFMX2dBQUJFQUVRQUFBeV80QUFBUVp6ZEhKcGJtY01DZ0FJWTNOeVpsTmhiSFFHYzNSeWFXNW5EQklBRUVOMmNESk9OMmRUY3pJeGVrSkVhakU9fEf2K3bbQIIjOUSYccfh6VmGcGMh4XZnnpbSTtaaditu; csrf_token=akYxS66t4OaXYpWjSOERKqPgO6I%3D; xlly_s=1; acw_tc=0bcd4cde17355276366682360e980e7be969f8a511ad05b4b353a95d7357f2; _ga_K9CSTSKFC5=GS1.1.1735527637.91.1.1735527686.0.0.0; tfstk=gc2tSJMiWwbG0_klIO1nmdXvwJSnM-EaYPrWnq0MGyULVu8iGlDiDKUU0R0inGPKky3eIKmGutUYc2SsI5ADhZUi8xSZiRvY-JzxiPmG_EpYOy3gnGz0JqMaK5vmSNkYczDAraXlElrZgx_lrukrTBDS2cTXojTBOxmvqIMU8lrZ3H-Hl_VQbEExpoEshrMIOmimhcgsGMHIccHXCj96OegEcxMj5xMBd0mqcK9_lksK02gjhfGm7h3DfqpYw5swdU8swK9bpchCtlgQU8jmjfH7X2LWPJpr64ZsJK_zy36qk2y5-6EUl5aiYrBRJYNzJ-hSHOLrXWZ-dVD5wBHTxPy-C8Q9IDcxWWws9n9bXvPsaSUOWCu_syhrAXtAUD4oRly_9i8Qfz0tCDGhFgEIGW2ZaRbBBYNzjAVbPwAi57nf402ue3f2r4nD1MIpgIlsYqqaQfE2AQStv4jHtIRqtDoKrMIpgIlsYD3lx9A2gXmF.; isg=BHd3CKsJ3DwYSljqdM3qcBYKBmvBPEueOk05QMkkFMateJS60Q7d7yEeWtgm0CMW' \
+  -H 'Origin: https://www.modelscope.cn' \
+  -H 'Referer: https://www.modelscope.cn/studios/Akizuki/Large_Language_model/settings' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \
+  -H 'X-CSRF-TOKEN: akYxS66t4OaXYpWjSOERKqPgO6I=' \
+  -H 'X-Modelscope-Trace-Id: d849c359-b063-4b07-adc5-c9552459a555' \
+  -H 'bx-v: 2.5.22' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'x-modelscope-accept-language: zh_CN' \
+  --data-raw '{"Path":"Akizuki","Name":"Large_Language_model"}'
