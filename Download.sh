@@ -12,6 +12,7 @@ declare -A model_mapping=(
     ["QWQ114514123/shenchaoweiba-w2:shenchaoweiba-w2.safetensors"]="shenchaoweiba-w2.safetensors:/etc/sgpu/pmem/lora"
     ["QWQ114514123/cookie-wa:cookie-wa.safetensors"]="cookie-wa.safetensors:/etc/sgpu/pmem/lora"
     ["QWQ114514123/beni-wai:beni-wai.safetensors"]="beni-wai.safetensors:/etc/sgpu/pmem/lora"
+    ["QWQ114514123/slime6:slime6.safetensors"]="slime6.safetensors:/etc/sgpu/pmem/lora"
 )
 
 # 日志文件路径
