@@ -42,6 +42,8 @@ else
     cd /home/epors/stable-diffusion-webui-forge/models/Stable-diffusion && modelscope download --model 'menyudada/MiaoMiaoPixel' MiaoMiaoPixel_V1.0.safetensors --local_dir '/home/epors/stable-diffusion-webui-forge/models/Stable-diffusion'
     cd /home/epors/stable-diffusion-webui-forge/models/Stable-diffusion && modelscope download --model 'QWQ114514123/WAI-illustrious-SDXL' waiIllustrious_v130.safetensors --local_dir '/home/epors/stable-diffusion-webui-forge/models/Stable-diffusion'
     cd /home/epors/stable-diffusion-webui-forge/models/Stable-diffusion && modelscope download --model 'MusePublic/14_ckpt_SD_XL' 48.safetensors --local_dir '/home/epors/stable-diffusion-webui-forge/models/Stable-diffusion'
+    cd /home/epors/stable-diffusion-webui-forge/models/Stable-diffusion && modelscope download --model 'QWQ114514123/WAI-illustrious-SDXL-v14' waiNSFWIllustrious_v140.safetensors --local_dir '/home/epors/stable-diffusion-webui-forge/models/Stable-diffusion'
+    cd /home/epors/stable-diffusion-webui-forge/models/Stable-diffusion && modelscope download --model 'QWQ114514123/WAI-SHUFFLE-NOOB' waiSHUFFLENOOB.safetensors --local_dir '/home/epors/stable-diffusion-webui-forge/models/Stable-diffusion'
     # 下载 Lora 模型
     echo "下载 Lora 模型"
     cd /etc/sgpu/pmem/lora && modelscope download --model 'govm114/warma_wai' warma_wai.safetensors --local_dir '/etc/sgpu/pmem/lora'
