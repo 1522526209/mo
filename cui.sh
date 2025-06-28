@@ -3,7 +3,7 @@
 # 检查目录是否存在
 if [ -d "/root/ComfyUI" ]; then
     echo "检测到文件存在，跳过安装直接启动"
-    /root/ComfyUI/venv/bin/python main.py --disable-cuda-malloc & python bash /root/test.sh
+    cd /root/ComfyUI && /root/ComfyUI/venv/bin/python main.py --disable-cuda-malloc & python bash /root/test.sh
 else
     echo "开始安装 CUI"
     apt update && apt install -y aria2
@@ -49,5 +49,5 @@ else
 
     # 启动 SD WebUI
     echo "启动 SD WebUI"
-    /root/ComfyUI/venv/bin/python main.py --disable-cuda-malloc & python bash /root/test.sh
+    cd /root/ComfyUI && /root/ComfyUI/venv/bin/python main.py --disable-cuda-malloc & python bash /root/test.sh
 fi

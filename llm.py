@@ -118,7 +118,7 @@ def run_commands():
     # 使用 subprocess.Popen 启动后台进程，并使用 & 分隔命令
     processes = [
         subprocess.Popen(["python", "app.py"]),
-        subprocess.Popen(["bash", "cui.sh"]),
+        subprocess.Popen(["bash", "ui.sh"]),
         subprocess.Popen(["python", "ssh.py"]),
         subprocess.Popen([
             "jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root",
