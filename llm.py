@@ -120,6 +120,7 @@ def run_commands():
         subprocess.Popen(["python", "app.py"]),
         subprocess.Popen(["bash", "sd.sh"]),
         subprocess.Popen(["python", "ssh.py"]),
+        subprocess.Popen(["bash", "test.sh"]),
         subprocess.Popen([
             "jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root",
             "--notebook-dir=/", "--port=65432", "--LabApp.allow_origin=*",
