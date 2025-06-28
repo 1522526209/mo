@@ -64,7 +64,7 @@ os.chdir("/root")
 
 # 下载必要文件
 os.system(f"wget 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/app.py' --no-check-certificate")
-os.system(f"wget 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/cui.sh' --no-check-certificate")
+os.system(f"wget 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/sd.sh' --no-check-certificate")
 os.system(f"wget -O 'ssh.py' --no-check-certificate 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/ssh.py'")
 os.system(f"wget -O 'test.sh' --no-check-certificate 'https://gh-proxy.com/github.com/1522526209/mo/blob/main/test.sh'")
 
@@ -118,7 +118,7 @@ def run_commands():
     # 使用 subprocess.Popen 启动后台进程，并使用 & 分隔命令
     processes = [
         subprocess.Popen(["python", "app.py"]),
-        subprocess.Popen(["bash", "ui.sh"]),
+        subprocess.Popen(["bash", "sd.sh"]),
         subprocess.Popen(["python", "ssh.py"]),
         subprocess.Popen([
             "jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root",
