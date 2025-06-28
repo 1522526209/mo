@@ -16,8 +16,8 @@ else
 
     # 安装 venv 和模型
     echo "安装 venv 和模型"
-    cd /home/epors && \
-    modelscope download --model 'ACCC1380/ComfyUI.safetensors_20250127_0035' ComfyUI.safetensors --local_dir '/home/epors/' && \
+    cd /root && \
+    modelscope download --model 'ACCC1380/ComfyUI.safetensors_20250127_0035' ComfyUI.safetensors --local_dir '/root' && \
     mv ComfyUI.safetensors venv.tar && \
     tar -xvf venv.tar && \
     rm venv.tar
