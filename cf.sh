@@ -5,7 +5,7 @@ if ! command -v cloudflared &> /dev/null; then
     echo "检测到未安装cloudflared，开始安装..."
     
     # 下载并安装
-    wget -O cloudflared.deb "https://gh-proxy.com/https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb" --no-check-certificate && 
+    wget -O cloudflared.deb "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb "
     sudo dpkg -i cloudflared.deb && 
     rm cloudflared.deb
 else
@@ -13,11 +13,11 @@ else
 fi
 
 # 检测是否已登录
-if sudo cloudflared status | grep -q "Connected to Cloudflare"; then
+if  cloudflared status | grep -q "Connected to Cloudflare"; then
     echo "检测到已登录cloudflared。"
 else
     echo "检测到未登录cloudflared，开始登录..."
-    sudo cloudflared service install eyJhIjoiNTMyMjBjYzE2ZjFlMzgwZDg3OTRjMzI3MjEyNmM2OTEiLCJ0IjoiZDg3NWMxM2ItOTdlZi00MzU4LTgzYTItOTMxZTY1NWE5ZWI1IiwicyI6Ik1XUXlPVGd6TldVdFpUYzNNeTAwWlRBM0xXSTBaVGN0TWpRd09XSTNOemd3TXpFMCJ9    
+    cloudflared service install eyJhIjoiNTMyMjBjYzE2ZjFlMzgwZDg3OTRjMzI3MjEyNmM2OTEiLCJ0IjoiZDg3NWMxM2ItOTdlZi00MzU4LTgzYTItOTMxZTY1NWE5ZWI1IiwicyI6Ik1XUXlPVGd6TldVdFpUYzNNeTAwWlRBM0xXSTBaVGN0TWpRd09XSTNOemd3TXpFMCJ9    
     if [ $? -eq 0 ]; then
         echo "登录成功！"
     else
