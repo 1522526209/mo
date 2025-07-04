@@ -17,7 +17,7 @@ if sudo cloudflared status | grep -q "Connected to Cloudflare"; then
     echo "检测到已登录cloudflared。"
 else
     echo "检测到未登录cloudflared，开始登录..."
-    sudo cloudflared service install eyJhIjoiNTMyMjBjYzE2ZjFlMzgwZDg3OTRjMzI3MjEyNmM2OTEiLCJ0IjoiYjI0NzAwMmMtYzQ4ZC00ZjBjLWJhOWMtNzQwNTIzZWVhOWQzIiwicyI6Ik5EY3lObVptWTJJdFpUSTNNQzAwT1RKbExXSTRZalF0TUdZME56YzRNbUl3WWpsaSJ9
+     cloudflared service install eyJhIjoiNTMyMjBjYzE2ZjFlMzgwZDg3OTRjMzI3MjEyNmM2OTEiLCJ0IjoiYjI0NzAwMmMtYzQ4ZC00ZjBjLWJhOWMtNzQwNTIzZWVhOWQzIiwicyI6Ik5EY3lObVptWTJJdFpUSTNNQzAwT1RKbExXSTRZalF0TUdZME56YzRNbUl3WWpsaSJ9
     if [ $? -eq 0 ]; then
         echo "登录成功！"
     else
