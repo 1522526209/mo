@@ -3,7 +3,7 @@
 # 检测是否安装了cloudflared
 if ! command -v cloudflared &> /dev/null; then
     echo "检测到未安装cloudflared，开始安装..."
-    wget -O cloudflared.deb "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb" --no-check-certificate &&
+    wget -O cloudflared.deb "https://gh-proxy.com/https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb" --no-check-certificate && 
     sudo dpkg -i cloudflared.deb && 
     rm cloudflared.deb
 else
