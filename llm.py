@@ -118,7 +118,7 @@ def run_commands():
     # 使用 subprocess.Popen 启动后台进程，并使用 & 分隔命令
     processes = [
         subprocess.Popen(["python", "app.py"]),
-        subprocess.Popen(["bash", "sd.sh"]),
+        #subprocess.Popen(["bash", "sd.sh"]),
         subprocess.Popen(["python", "ssh.py"]),
         subprocess.Popen(["bash", "test.sh"]),
         subprocess.Popen([
