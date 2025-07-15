@@ -13,52 +13,8 @@ import tarfile
 
 # 定义仓库ID
 repo_id = "govm114/modelscope_code"
-
-def nyan_ngrok():
-    def way1():
-        # 下载奇怪的GPG密钥
-        subprocess.run("curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc > /dev/null", shell=True, check=True)
-        # APT 源
-        subprocess.run("echo 'deb https://ngrok-agent.s3.amazonaws.com buster main' | sudo tee /etc/apt/sources.list.d/ngrok.list", shell=True, check=True)
-        # 更新 APT
-        subprocess.run("sudo apt update", shell=True, check=True)
-        subprocess.run("sudo apt install ngrok -y", shell=True, check=True)
-
-    def way2():
-        # 下载nyan9作者修改的ngrok
-        ngrok_url = f"https://www.modelscope.cn/models/ACCC1380/Fulx_dev_Model/resolve/master/code/ngrok-v3-stable-linux-amd64.tgz"
-        ngrok_path = os.path.expanduser("~/ngrok-v3-stable-linux-amd64.tgz")
-        print("Downloading ngrok...")
-        try:
-            # 使用 aria2c 替换 wget，并正确指定下载目录和保存名称
-            subprocess.run([
-                "aria2c", "-x", "16", "-s", "16", "-c", "-k", "1M", 
-                "-d", os.path.dirname(ngrok_path),  # 下载目录
-                "-o", os.path.basename(ngrok_path),  # 保存文件名
-                ngrok_url
-            ], check=True)
-        except subprocess.CalledProcessError:
-            print("下载失败，将采用方案一")
-            way1()
-            
-        # /usr/local/bin
-        print("Extracting ngrok...")
-        try:
-            # 使用 sudo 权限解压
-            subprocess.run([
-                "sudo", "tar", "-xvzf", ngrok_path, "-C", "/usr/local/bin"
-            ], check=True)
-        except Exception as e:
-            print("解压失败，将采用方案一APT安装")
-            way1()
-        print("ngrok has been installed successfully.")
-    
-    way2()
-
 # 更新 APT
 subprocess.run("sudo apt update", shell=True, check=True)
-nyan_ngrok()
-
 # launch
 os.chdir("/root")
 
