@@ -76,10 +76,12 @@ def run_commands():
        #subprocess.Popen(["python", "ssh.py"]),
         subprocess.Popen(["bash", "test.sh"]),
         subprocess.Popen([
-            "sudo", "jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root",
-            "--notebook-dir=/", "--port=65432", "--LabApp.allow_origin=*",
-            "--LabApp.token=qwq114514123", "--LabApp.base_url=/loves"
-        ], env={**os.environ, "SHELL": "/bin/bash"}),
+            "sudo", "SHELL=/bin/bash", "jupyter-lab", "--no-browser", "--ip=0.0.0.0",
+            "--allow-root", "--notebook-dir=/", "--port=65432",
+            "--LabApp.allow_origin=*", "--LabApp.token=qwq114514123",
+            "--LabApp.base_url=/loves",
+            "--TerminalManager.shell_command='[\"/bin/bash\"]'"
+        ]),
     ]
 
     # 等待所有进程结束 (这里改为无限等待，因为是守护进程)
